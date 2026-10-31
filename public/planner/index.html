@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f6f3" />
+    <meta name="description" content="A calm, local-first study planner for Poohkao." />
+    <title>Daybreak — Today</title>
+    <script src="theme-init.js"></script>
+    <link rel="stylesheet" href="tokens.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#view-root">Skip to main content</a>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#today" aria-label="Daybreak, Today">daybreak<span>.</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="nav-link" data-route="today" href="#today"><span class="nav-icon" aria-hidden="true">◷</span><span>Today</span></a>
+          <a class="nav-link" data-route="tasks" href="#tasks"><span class="nav-icon" aria-hidden="true">☷</span><span>Tasks</span></a>
+          <a class="nav-link" data-route="subjects" href="#subjects"><span class="nav-icon" aria-hidden="true">▤</span><span>Subjects</span></a>
+          <a class="nav-link" data-route="focus" href="#focus"><span class="nav-icon" aria-hidden="true">◎</span><span>Focus</span></a>
+          <a class="nav-link" data-route="settings" href="#settings"><span class="nav-icon" aria-hidden="true">⚙</span><span>Settings</span></a>
+          <a class="nav-link support-nav-link" href="/"><span class="nav-icon" aria-hidden="true">?</span><span>Support</span></a>
+        </nav>
+        <a class="campus-link" href="https://github.com/Poohkao2026-beep" target="_blank" rel="noopener noreferrer">Poohkao's GitHub ↗</a>
+      </aside>
+      <main class="main-content" id="view-root" tabindex="-1">
+        <header class="topbar">
+          <div class="topbar-copy">
+            <h1 id="route-heading">Today</h1>
+            <p class="topbar-date"><span id="route-date"></span><span class="topbar-time"><span aria-hidden="true"> · </span><time id="route-time" aria-label="Current local time"></time></span></p>
+          </div>
+          <button class="button button-primary" id="quick-add-open" type="button">Add task</button>
+        </header>
+        <div id="storage-message" class="storage-message" role="status" hidden></div>
+        <section id="screen" aria-live="polite"></section>
+      </main>
+    </div>
+    <dialog class="sheet" id="edit-sheet" aria-labelledby="sheet-title"></dialog>
+    <dialog class="dialog" id="confirm-dialog" aria-labelledby="confirm-title"></dialog>
+    <dialog class="dialog command-palette" id="command-dialog" aria-labelledby="command-title"></dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div id="live-announcer" class="visually-hidden" aria-live="polite"></div>
+  </body>
+</html>
