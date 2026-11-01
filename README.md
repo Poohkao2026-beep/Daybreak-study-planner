@@ -256,7 +256,7 @@ The browser suite uses a randomly named temporary IndexedDB database. It does no
 </p>
 
 <p align="center">
-  <strong>Daybreak</strong> &middot; vibe <a href="https://github.com/Poohkao2026-beep">@Poohkao2026-beep</a><br/>
+  <strong>Daybreak</strong> &middot; vibes <a href="https://github.com/Poohkao2026-beep">@Poohkao2026-beep</a><br/>
   <sub>Start the day on your own terms.</sub>
 </p>
 
