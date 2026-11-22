@@ -1,3 +1,11 @@
+# November 2026 student preview · 0.2.0-preview.1
+
+[Open the deployed Planner](https://daybreak-study-planner.vercel.app/planner). This preview introduces the public launcher for the hosted English and Thai planner. The four-mode switcher now fits in a two-by-two grid on phones. On the Horizon renders upcoming workload as a landscape, with a brief completion effect that respects reduced motion.
+
+The release assets contain the launcher and its SHA-256 checksum. See the [complete preview guide](https://github.com/Poohkao2026-beep/Daybreak-study-planner/blob/preview-0.2.0-1/packages/planner-launcher/README.md) for current capabilities, service limits, technical details and the proposed March 2027 launch roadmap.
+
+---
+
 # Daybreak v0.1.0 — Foundation
 
 This is the first versioned source release of the **existing public GitHub implementation**. It is a foundation release, not the full planned Daybreak Pro or 2027 roadmap.

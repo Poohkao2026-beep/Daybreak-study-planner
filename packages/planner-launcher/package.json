@@ -1,0 +1,12 @@
+{
+  "name": "@poohkao2026-beep/daybreak-planner-launcher",
+  "version": "0.2.0-preview.1",
+  "description": "Open the hosted Daybreak student planner and read its March 2027 launch guide.",
+  "type": "module",
+  "bin": { "daybreak-planner": "./cli.js" },
+  "files": ["cli.js", "README.md"],
+  "engines": { "node": ">=20" },
+  "homepage": "https://daybreak-study-planner.vercel.app/planner",
+  "repository": { "type": "git", "url": "git+https://github.com/Poohkao2026-beep/Daybreak-study-planner.git", "directory": "packages/planner-launcher" },
+  "publishConfig": { "registry": "https://npm.pkg.github.com" }
+}

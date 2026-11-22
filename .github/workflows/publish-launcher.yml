@@ -1,0 +1,26 @@
+name: Publish preview launcher
+on:
+  push:
+    tags: ['preview-*']
+permissions:
+  contents: read
+  packages: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/planner-launcher
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          registry-url: https://npm.pkg.github.com
+          scope: '@poohkao2026-beep'
+      - name: Test and publish launcher
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          test "$(node cli.js)" = "https://daybreak-study-planner.vercel.app/planner"
+          npm publish --tag preview
