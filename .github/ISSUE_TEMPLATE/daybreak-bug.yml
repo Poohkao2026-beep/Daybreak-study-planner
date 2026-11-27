@@ -1,0 +1,44 @@
+name: Daybreak bug report
+description: Report a reproducible problem in the preview, launcher, or Foundation.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        GitHub issues are public. Use sample tasks and courses. Do not include
+        real schedules, account details, API keys, or planner backups.
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Where did you see the problem?
+      options:
+        - Hosted Planner or Study Support
+        - Preview launcher
+        - Local Foundation checkout
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Language and environment
+      description: For browser issues, include the language, browser, and device or screen size. For launcher or local issues, include the OS and Node.js version.
+      placeholder: "Example: ไทย, Safari on iPhone"
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Start with the page or command. Use sample data.
+      placeholder: |
+        1. Open the Planner as a guest.
+        2. Add a sample task.
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: What happened and what did you expect?
+      description: Paste a short, redacted error message if there is one.
+    validations:
+      required: true
